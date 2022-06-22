@@ -2,6 +2,16 @@ import requests
 import re
 import json
 
+###
+import time
+import datetime
+curr_time = datetime.datetime.now()
+btime_str = curr_time.strftime("%Y-%m-%d")
+stime_str = curr_time.strftime("%p%H:%M:%S")
+timez = time.strftime('%Z', time.localtime())
+print("时区:", timez, " 当前时间:", btime_str, stime_str)
+###
+
 # 将抓包得来的cookie中的SSUUID粘贴到引号中间
 SSUUID = "5AFCB77E11D0ACE85D90652ACA7486F41209B2931F0C20FC328292B8072B296EBF02D0E0AC9263A63E350AA4E477EC8B22AFBF79B5D6B57274FD843D489D2FADD040B9E72A28A91BE819836D4BDA1F7AED9582D15EC4F573224C3AEAD08DD14588692DE4247A183622444E314D0FD3070D6D21F5B00368A720CE06883029D5C5028BBC065CEFAB445C9D2EA0932D678B"
 
